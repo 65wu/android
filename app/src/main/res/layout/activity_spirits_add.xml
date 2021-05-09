@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SpiritsAdd">
+
+  <TextView
+      android:id="@+id/static_spirits_name3"
+      android:layout_width="100dp"
+      android:layout_height="40dp"
+      android:layout_marginStart="32dp"
+      android:layout_marginLeft="32dp"
+      android:layout_marginTop="64dp"
+      android:text="白酒描述"
+      app:autoSizeTextType="uniform"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/static_spirits_name2" />
+
+  <TextView
+      android:id="@+id/static_spirits_name2"
+      android:layout_width="100dp"
+      android:layout_height="40dp"
+      android:layout_marginStart="32dp"
+      android:layout_marginLeft="32dp"
+      android:layout_marginTop="64dp"
+      android:text="上传图片"
+      app:autoSizeTextType="uniform"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/static_spirits_name" />
+
+  <TextView
+      android:id="@+id/static_spirits_name"
+      android:layout_width="100dp"
+      android:layout_height="40dp"
+      android:layout_marginStart="32dp"
+      android:layout_marginLeft="32dp"
+      android:layout_marginTop="32dp"
+      android:text="白酒名称"
+      app:autoSizeTextType="uniform"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <EditText
+      android:id="@+id/new_spirits_name"
+      android:layout_width="0dp"
+      android:layout_height="40dp"
+      android:layout_marginStart="32dp"
+      android:layout_marginLeft="32dp"
+      android:layout_marginTop="32dp"
+      android:layout_marginEnd="32dp"
+      android:layout_marginRight="32dp"
+      android:ems="10"
+      android:inputType="textPersonName"
+      android:text="新白酒名"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/static_spirits_name"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <Button
+      android:id="@+id/image_button"
+      android:layout_width="0dp"
+      android:layout_height="48dp"
+      android:layout_marginStart="32dp"
+      android:layout_marginLeft="32dp"
+      android:layout_marginTop="64dp"
+      android:layout_marginEnd="128dp"
+      android:layout_marginRight="128dp"
+      android:text="上传图片"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/static_spirits_name2"
+      app:layout_constraintTop_toBottomOf="@+id/new_spirits_name" />
+
+  <EditText
+      android:id="@+id/new_spirits_description"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_marginStart="32dp"
+      android:layout_marginLeft="32dp"
+      android:layout_marginTop="64dp"
+      android:layout_marginEnd="32dp"
+      android:layout_marginRight="32dp"
+      android:layout_marginBottom="128dp"
+      android:ems="10"
+      android:gravity="start"
+      android:inputType="textPersonName"
+      android:text="Name"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/static_spirits_name3" />
+
+  <Button
+      android:id="@+id/submit_new_spirits"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="16dp"
+      android:layout_marginRight="16dp"
+      android:layout_marginBottom="16dp"
+      android:text="添加新白酒"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
